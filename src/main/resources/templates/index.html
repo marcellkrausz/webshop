@@ -7,5 +7,24 @@
 <body>
 <input type="button" onclick="window.location.href='/login'">
 <input type="button" onclick="window.location.href='/register'">
+<table>
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Password</td>
+            <td>Rang</td>
+        </tr>
+    </thead>
+    <tbody th:if="${not #lists.isEmpty(users)}"></tbody>
+        <tr th:each="user:${users}">
+            <td th:text="${user.getId()}"></td>
+            <td th:text="${user.getName()}"></td>
+            <td th:text="${user.getEmail()}"></td>
+            <td th:text="${user.getPassword()}"></td>
+            <td th:text="${user.getRang()}"></td>
+        </tr>
+</table>
 </body>
 </html>
