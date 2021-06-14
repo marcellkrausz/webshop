@@ -1,5 +1,6 @@
 package com.marcellk.webshop.services;
 
+import com.marcellk.webshop.commands.UserCommand;
 import com.marcellk.webshop.models.User;
 
 import java.util.List;
@@ -14,7 +15,11 @@ public interface UserService {
 
     User changeName(Long id, String name);
 
-    void delete(Long id);
+    void deleteById(Long id);
+
+    UserCommand findUserCommandById(Long id);
+
+    UserCommand saveUserCommand(UserCommand userCommand);
 
 //    Cart getCartById(Long id);
 }

@@ -1,5 +1,6 @@
 package com.marcellk.webshop.services;
 
+import com.marcellk.webshop.commands.UserCommand;
 import com.marcellk.webshop.models.User;
 import org.springframework.stereotype.Service;
 
@@ -28,7 +29,17 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void delete(Long id) {
+    public void deleteById(Long id) {
 
+    }
+
+    @Override
+    public UserCommand findUserCommandById(Long id) {
+        return null;
+    }
+
+    @Override
+    public UserCommand saveUserCommand(UserCommand userCommand) {
+        return null;
     }
 }

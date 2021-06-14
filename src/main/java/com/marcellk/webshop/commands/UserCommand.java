@@ -20,6 +20,6 @@ public class UserCommand {
     private String password;
     private String email;
     private int rang;
-    private int cartId;
+//    private int cartId;
 
 }

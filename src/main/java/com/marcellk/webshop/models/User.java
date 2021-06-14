@@ -23,7 +23,7 @@ public class User {
     private String password;
     private String email;
     private int rang;
-    private int cartId;
+//    private int cartId;
 
     public User(String name, String password, String email, int rang) {
         this.name = name;
